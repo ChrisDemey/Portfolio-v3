@@ -27,21 +27,19 @@
       </router-link>
     </div>
 
-    <router-view/>
+    <router-view class="centered-on-screen" />
   </div>
 </template>
 
-<script>
-
-</script>
-
 <style lang="scss">
   * {
-    font-family: 'Spartan', sans-serif;
     cursor: none;
+    font-family: 'Spartan', sans-serif;
     background-color: rgb(32, 32, 32);
     color: white;
-    overflow: hidden;
+  }
+  body {
+    margin: 0px;
   }
   #pointer-ring {
     left: 0px;
@@ -54,7 +52,18 @@
     background: transparent;
     position: absolute;
     border-radius: 50%;
-    z-index: 2;
+    z-index: 6;
     pointer-events: none;
+  }
+  #nav {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 5;
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1080px;
   }
 </style>

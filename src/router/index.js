@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import Works from '../views/Works.vue'
+import Works from '../views/MyWorks.vue'
 import Social from '../views/Social.vue'
 
 Vue.use(VueRouter)
@@ -20,7 +20,7 @@ const routes = [
   },
   {
     path: '/works',
-    name: 'Works',
+    name: 'MyWorks',
     component: Works
   },
   {

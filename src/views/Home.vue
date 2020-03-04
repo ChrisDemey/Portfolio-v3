@@ -1,9 +1,7 @@
 <template>
   <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <h1>CHRISTOPHE DEMEY</h1>
-    <h3>Développeur Web Front-end</h3>
+    <h3>Développeur Web Front-End</h3>
   </div>
 </template>
 
@@ -20,6 +18,18 @@
 // }
 </script>
 
-<style>
-
+<style lang="scss">
+  .home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    h1 {
+      margin-bottom: 15px;
+      margin: auto;
+      font-size: 50px;
+    }
+  }
 </style>
