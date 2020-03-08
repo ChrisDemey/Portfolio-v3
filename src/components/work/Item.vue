@@ -21,17 +21,12 @@ export default {
     .item {
         width: 250px;
         height: 170px;
-        margin-bottom: 15px;
         img {
             object-fit: cover;
             border-radius: 10px;
             width: 100%;
             height: 100%;
             transition: (0.3s);
-            filter: grayscale(1);
-            &:hover{
-                filter: none;
-            }
         }
     }
 </style>

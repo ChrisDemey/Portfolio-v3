@@ -1,23 +1,50 @@
 <template>
     <div class="myworks">
         <div class="line">
-            <div class="work-1">
-                <Item background='./assets/img/work-first.jpg' alt='Restaurant bootstrap' link='' />
-                <Badge id="bootstrap" badgename='Bootstrap' />
-            </div>
-            <div class="work-2">
-                <Item background='./assets/img/work-two.jpg' alt='Allez Cine!' link='' />
-                <Badge id="bootstrap" badgename='Bootstrap' />
-                <Badge id="api" badgename='API' />
-            </div>
-            <div class="work-3">
-                <Item background='./assets/img/work-three.jpg' alt='Qu-AI 10' link='' />
-                <Badge id="bootstrap" badgename='Bootstrap' />
-            </div>
-            <div class="work-4">
-                <Item background='./assets/img/work-four.jpg' alt='Hitman franchise' link='' />
-                <Badge id="bootstrap" badgename='Bootstrap' />
-            </div>
+            <!-- work 1 -->
+            <kinesis-container>
+                <div class="work-1">
+                    <kinesis-element :strength="20" type="depth">
+                        <Item background='./assets/img/work-first.jpg' alt='Restaurant bootstrap' link='' />
+                    </kinesis-element>
+                    <kinesis-element class="k-element" :strength="30" type="depth">
+                        <Badge id="bootstrap" badgename='Bootstrap' />
+                    </kinesis-element>
+                </div>
+            </kinesis-container>
+            <!-- work 2 -->
+            <kinesis-container>
+                <div class="work-2">
+                    <kinesis-element :strength="20" type="depth">
+                        <Item background='./assets/img/work-two.jpg' alt='Allez Cine!' link='' />
+                    </kinesis-element>
+                    <kinesis-element class="k-element" :strength="30" type="depth">
+                        <Badge id="bootstrap" badgename='Bootstrap' />
+                    </kinesis-element>
+                </div>
+            </kinesis-container>
+            <!-- work 3 -->
+            <kinesis-container>
+                <div class="work-3">
+                    <kinesis-element :strength="20" type="depth">
+                        <Item background='./assets/img/work-three.jpg' alt='Qu-AI 10' link='' />
+                    </kinesis-element>
+                    <kinesis-element class="k-element" :strength="30" type="depth">
+                        <Badge id="bootstrap" badgename='Bootstrap' />
+                    </kinesis-element>
+                </div>
+            </kinesis-container>
+            <!-- work 3 -->
+            <kinesis-container>
+                <div class="work-4">
+                    <kinesis-element :strength="20" type="depth">
+                        <Item background='./assets/img/work-four.jpg' alt='Hitman franchise' link='' />
+                    </kinesis-element>
+                    <kinesis-element class="k-element" :strength="30" type="depth">
+                        <Badge id="bootstrap" badgename='Bootstrap' />
+                    </kinesis-element>
+                </div>
+            </kinesis-container>
         </div>
     </div>
 </template>
@@ -41,12 +68,10 @@ export default {
         margin-right: -50%;
         transform: translate(-50%, -50%);
         max-width: 1080px;
+        width: 100%;
         .line {
             display: flex;
-            .work-1, .work-2, .work-3, .work-4 {
-                margin-left: 10px;
-                margin-right: 10px;
-            }
+            justify-content: space-around;
         }
     }
 </style>

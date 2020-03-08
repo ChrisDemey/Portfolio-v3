@@ -1,10 +1,9 @@
 <template>
   <div id="app">
-    <div class="cursor"></div>
     <div id="nav">
       <router-link to="/">
         <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" fill="white" viewBox="0 0 576 512">
-          <path d="M541 229.16l-232.85-190a32.16 32.16 0 0 0-40.38 0L35 229.16a8 8 0 0 0-1.16 11.24l10.1 12.41a8 8 0 0 0 11.2 1.19L96 220.62v243a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-128l64 .3V464a16 16 0 0 0 16 16l128-.33a16 16 0 0 0 16-16V220.62L520.86 254a8 8 0 0 0 11.25-1.16l10.1-12.41a8 8 0 0 0-1.21-11.27zm-93.11 218.59h.1l-96 .3V319.88a16.05 16.05 0 0 0-15.95-16l-96-.27a16 16 0 0 0-16.05 16v128.14H128V194.51L288 63.94l160 130.57z"/>
+          <path class="homeforming" d="M541 229.16l-232.85-190a32.16 32.16 0 0 0-40.38 0L35 229.16a8 8 0 0 0-1.16 11.24l10.1 12.41a8 8 0 0 0 11.2 1.19L96 220.62v243a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-128l64 .3V464a16 16 0 0 0 16 16l128-.33a16 16 0 0 0 16-16V220.62L520.86 254a8 8 0 0 0 11.25-1.16l10.1-12.41a8 8 0 0 0-1.21-11.27zm-93.11 218.59h.1l-96 .3V319.88a16.05 16.05 0 0 0-15.95-16l-96-.27a16 16 0 0 0-16.05 16v128.14H128V194.51L288 63.94l160 130.57z"/>
         </svg>
       </router-link>
 
@@ -26,14 +25,13 @@
         </svg>
       </router-link>
     </div>
-
-    <router-view class="centered-on-screen" />
+    <router-view />
   </div>
 </template>
 
 <style lang="scss">
   * {
-    cursor: none;
+    // cursor: none;
     font-family: 'Spartan', sans-serif;
     background-color: rgb(32, 32, 32);
     color: white;
@@ -41,20 +39,20 @@
   body {
     margin: 0px;
   }
-  #pointer-ring {
-    left: 0px;
-    top: 0px;
-    width: 0px;
-    height: 0px;
-    padding: 15px;
-    border: 2px solid rgba(255, 255, 255, 0);
-    box-shadow: 0px 0px 3px rgb(255, 255, 255), 0px 0px 15px rgba(255, 255, 255, 0.61), inset 0px 0px 10px black;
-    background: transparent;
-    position: absolute;
-    border-radius: 50%;
-    z-index: 6;
-    pointer-events: none;
-  }
+  // #pointer-ring {
+  //   left: 0px;
+  //   top: 0px;
+  //   width: 0px;
+  //   height: 0px;
+  //   padding: 15px;
+  //   border: 2px solid rgba(255, 255, 255, 0);
+  //   box-shadow: 0px 0px 3px rgb(255, 255, 255), 0px 0px 15px rgba(255, 255, 255, 0.61), inset 0px 0px 10px black;
+  //   background: transparent;
+  //   position: absolute;
+  //   border-radius: 50%;
+  //   z-index: 6;
+  //   pointer-events: none;
+  // }
   #nav {
     position: fixed;
     left: 50%;
@@ -65,5 +63,8 @@
     justify-content: space-between;
     width: 100%;
     max-width: 1080px;
+  }
+  .k-element {
+    background: transparent;
   }
 </style>
