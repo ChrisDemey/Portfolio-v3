@@ -1,6 +1,6 @@
 <template>
     <div class="item">
-        <a :href="link">
+        <a :href="link" target="_blank">
             <img :src="background" :alt="alt">
         </a>
     </div>
@@ -10,9 +10,9 @@
 export default {
   name: 'Item',
   props: {
-    link: String,
     background: String,
-    alt: String
+    alt: String,
+    link: String
   }
 }
 </script>
@@ -20,8 +20,10 @@ export default {
 <style lang="scss">
     .item {
         width: 250px;
-        height: 170px;
+        height: 180px;
+        background: transparent;
         img {
+            border: 3px solid white;
             object-fit: cover;
             border-radius: 10px;
             width: 100%;
