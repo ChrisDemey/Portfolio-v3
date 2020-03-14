@@ -23,12 +23,19 @@ export default {
         height: 180px;
         background: transparent;
         img {
-            border: 3px solid white;
             object-fit: cover;
             border-radius: 10px;
             width: 100%;
             height: 100%;
             transition: (0.3s);
+        }
+        @media screen and (max-width: 555px) {
+            width: 180px;
+            height: 130px;
+        }
+        @media screen and (max-width: 399px) {
+            width: 250px;
+            height: 200px;
         }
     }
 </style>

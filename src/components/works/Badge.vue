@@ -26,9 +26,12 @@ export default {
     text-align: center;
     transition: 0.2s;
     background: transparent;
-    // box-shadow: 0px 0px 10px rgb(32, 32, 32);
-    border: 3px solid white;
+    // border: 3px solid white;
     font-weight: 900;
+    @media screen and (max-width: 500px) {
+      width: 80px;
+      padding: 3px 7px;
+    }
   }
   #bootstrap {
     background-color: rgb(171, 89, 192);

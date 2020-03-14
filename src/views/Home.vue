@@ -26,17 +26,23 @@
       margin-bottom: 15px;
       margin: auto;
       font-size: 50px;
+      @media screen and (max-width: 375px) {
+        font-size: 25px;
+      }
     }
     svg {
       background: transparent;
       margin-left: 20px;
       margin-right: 20px;
       transition: 0.2s;
+      @media screen and (max-width: 375px) {
+        height: 55px;
+      }
       .vue-icon, .tailwind-icon, .bootstrap-icon {
         transition: 0.2s;
       }
       &:hover {
-        .vue-icon{
+        .vue-icon {
           transition: 0.2s;
           fill: #41B883;
         }

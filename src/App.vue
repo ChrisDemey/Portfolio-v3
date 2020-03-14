@@ -60,7 +60,7 @@
     z-index: 5;
     display: flex;
     padding: 20px 0px;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     max-width: 1080px;
   }

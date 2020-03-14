@@ -5,11 +5,11 @@
         <a v-on:click="activetab=1" v-bind:class="[ activetab === 1 ? 'active' : '' ]">Tout</a>
       </div>
       <div class="down-line">
-        <a v-on:click="activetab=2" v-bind:class="[ activetab === 2 ? 'active' : '' ]">Bootstrap</a>
-        <a v-on:click="activetab=3" v-bind:class="[ activetab === 3 ? 'active' : '' ]">Vue</a>
-        <a v-on:click="activetab=4" v-bind:class="[ activetab === 4 ? 'active' : '' ]">Tailwind</a>
-        <a v-on:click="activetab=5" v-bind:class="[ activetab === 5 ? 'active' : '' ]">Alpine</a>
-        <a v-on:click="activetab=6" v-bind:class="[ activetab === 6 ? 'active' : '' ]">React</a>
+        <a v-on:click="activetab=2" v-bind:class="[ activetab === 2 ? 'active active-bootstrap' : '' ]">Bootstrap</a>
+        <a v-on:click="activetab=3" v-bind:class="[ activetab === 3 ? 'active active-vue' : '' ]">Vue</a>
+        <a v-on:click="activetab=4" v-bind:class="[ activetab === 4 ? 'active active-tailwind' : '' ]">Tailwind</a>
+        <a v-on:click="activetab=5" v-bind:class="[ activetab === 5 ? 'active active-alpine' : '' ]">Alpine</a>
+        <a v-on:click="activetab=6" v-bind:class="[ activetab === 6 ? 'active active-react' : '' ]">React</a>
       </div>
     </div>
     <div class="content">
@@ -39,7 +39,7 @@
         <Badge id="react" badgename='React' />
       </div>
       <div class="work" v-show="activetab === 1 || activetab === 3">
-        <Item background='./assets/img/work-seven.jpg' alt='project-img' link='' />
+        <Item background='./assets/img/work-seven.jpg' alt='project-img' link='https://github.com/ChrisDemey/Portfolio-v3' />
         <Badge id="vue" badgename='Vue' />
       </div>
     </div>
@@ -65,22 +65,21 @@ export default {
 <style lang="scss">
   .myworks {
     max-width: 1080px;
-    width: 100%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     .tabs {
-      top: 130px;
-      z-index: 4;
+      position: fixed;
+      top: 90px;
+      z-index: 6;
       display: flex;
       flex-direction: column;
       text-align: center;
       margin: auto;
-      width: 100%;
+      width: 90%;
       max-width: 1080px;
-      position: fixed;
-      border: 1px solid white;
       .up-line {
         background: transparent;
         display: flex;
@@ -91,30 +90,73 @@ export default {
         background: transparent;
         display: flex;
         justify-content: space-around;
-        border-top: 1px solid white;
       }
       a {
         cursor: pointer;
         padding: 10px;
         background: transparent;
-        width: 100%;
+        color: rgb(78, 78, 78);
         &:hover{
-          background-color: white;
-          color: rgb(46, 46, 46);
+          color: rgb(129, 129, 129);
           font-weight: bold;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 13px;
         }
       }
       .active {
-        background-color: white;
-        color: rgb(46, 46, 46);
+        color: rgb(255, 255, 255);
         font-weight: bold;
+        &:hover{
+          color: white;
+        }
+      }
+      .active-bootstrap {
+        color: rgb(171, 89, 192);
+        &:hover {
+          color: rgb(171, 89, 192);
+        }
+      }
+      .active-vue {
+        color: #41B883;
+        &:hover {
+          color: #41B883;
+        }
+      }
+      .active-tailwind {
+        background: linear-gradient(to right, rgb(0, 153, 255), rgb(0, 255, 221));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &:hover {
+          background: linear-gradient(to right, rgb(0, 153, 255), rgb(0, 255, 221));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .active-alpine {
+        color: rgb(66, 108, 114);
+        &:hover {
+          color: rgb(66, 108, 114);
+        }
+      }
+      .active-react {
+        color: rgb(0, 255, 255);
+        &:hover {
+          color: rgb(0, 255, 255);
+        }
       }
     }
     .content {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      margin-top: 260px;
+      margin-top: 210px;
+      @media screen and (max-width: 555px) {
+        margin-top: 185px;
+      }
+      @media screen and (max-width: 399px) {
+        justify-content: center;
+      }
     }
   }
 </style>

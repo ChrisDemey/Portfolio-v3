@@ -14,15 +14,15 @@
 
 <style lang="scss">
   .about {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    padding-top: 130px;
     width: 100%;
     max-width: 1080px;
     margin: auto;
     text-align: justify;
+    @media screen and (max-width: 1024px) {
+      max-width: 90%;
+      padding-top: 110px;
+    }
     h3 {
       text-align: center;
       margin-bottom: 20px;
@@ -32,24 +32,43 @@
     .row-1 {
       display: flex;
       margin-bottom: 20px;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        margin-bottom: 0px;
+      }
       p {
         &:first-child{
           flex: 1 100%;
           padding-right: 20px;
+          @media screen and (max-width: 768px) {
+            padding: 0px;
+          }
         }
         &:last-child{
           padding-left: 20px;
+          @media screen and (max-width: 768px) {
+            padding: 0px;
+          }
         }
       }
     }
     .row-2 {
       display: flex;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
       p {
         &:first-child{
           padding-right: 20px;
+          @media screen and (max-width: 768px) {
+            padding: 0px;
+          }
         }
         &:last-child{
           padding-left: 20px;
+          @media screen and (max-width: 768px) {
+            padding: 0px;
+          }
         }
       }
     }
