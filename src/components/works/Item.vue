@@ -1,9 +1,11 @@
 <template>
-    <div class="item">
-        <a :href="link" target="_blank">
-            <img :src="background" :alt="alt">
-        </a>
-    </div>
+    <kinesis-element :strength="15" :distance="100" type="depth">
+        <div class="item">
+            <a :href="link" target="_blank">
+                <img :src="background" :alt="alt">
+            </a>
+        </div>
+    </kinesis-element>
 </template>
 
 <script>
