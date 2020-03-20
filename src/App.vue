@@ -33,11 +33,11 @@
   * {
     // cursor: none;
     font-family: 'Spartan', sans-serif;
-    background-color: rgb(32, 32, 32);
     color: white;
   }
   body {
     margin: 0px;
+    background-color: rgb(32, 32, 32);
   }
   // #pointer-ring {
   //   left: 0px;
@@ -50,10 +50,11 @@
   //   background: transparent;
   //   position: absolute;
   //   border-radius: 50%;
-  //   z-index: 6;
+  //   z-index: 10;
   //   pointer-events: none;
   // }
   #nav {
+    background-color: rgb(32, 32, 32);
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -63,8 +64,5 @@
     justify-content: space-around;
     width: 100%;
     max-width: 1080px;
-  }
-  .k-element {
-    background: transparent;
   }
 </style>

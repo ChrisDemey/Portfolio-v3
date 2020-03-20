@@ -13,49 +13,35 @@
       </div>
     </div>
     <div class="content">
-      <kinesis-container class="work" v-show="activetab === 1 || activetab === 4 || activetab === 5">
+      <div v-show="activetab === 1 || activetab === 4 || activetab === 5">
         <Item background='./assets/img/work-five.jpg' alt='project-img' link='https://github.com/ChrisDemey/TD2-Tailwind-Alpine' />
-        <kinesis-element :strength="20" type="depth">
-          <Badge id="tailwind" badgename='Tailwind' />
-          <Badge id="alpine" badgename='Alpine' />
-        </kinesis-element>
-      </kinesis-container>
-      <kinesis-container class="work" v-show="activetab === 1 || activetab === 2">
+        <Badge id="tailwind" badgename='Tailwind' />
+        <Badge id="alpine" badgename='Alpine' />
+      </div>
+      <div class="work" v-show="activetab === 1 || activetab === 2">
         <Item background='./assets/img/work-first.jpg' alt='project-img' link='https://github.com/ChrisDemey/restaurant-css-framework' />
-        <kinesis-element :strength="20" type="depth">
-          <Badge id="bootstrap" badgename='Bootstrap' />
-        </kinesis-element>
-      </kinesis-container>
-      <kinesis-container class="work" v-show="activetab === 1 || activetab === 2">
+        <Badge id="bootstrap" badgename='Bootstrap' />
+      </div>
+      <div class="work" v-show="activetab === 1 || activetab === 2">
         <Item background='./assets/img/work-two.jpg' alt='project-img' link='https://github.com/ChrisDemey/allezcinev3' />
-        <kinesis-element :strength="20" type="depth">
-          <Badge id="bootstrap" badgename='Bootstrap' />
-        </kinesis-element>
-      </kinesis-container>
-      <kinesis-container class="work" v-show="activetab === 1 || activetab === 2">
+        <Badge id="bootstrap" badgename='Bootstrap' />
+      </div>
+      <div class="work" v-show="activetab === 1 || activetab === 2">
         <Item background='./assets/img/work-three.jpg' alt='project-img' link='https://github.com/ChrisDemey/Qu-AI-10-event-website' />
-        <kinesis-element :strength="20" type="depth">
-          <Badge id="bootstrap" badgename='Bootstrap' />
-        </kinesis-element>
-      </kinesis-container>
-      <kinesis-container class="work" v-show="activetab === 1 || activetab === 2">
+        <Badge id="bootstrap" badgename='Bootstrap' />
+      </div>
+      <div class="work" v-show="activetab === 1 || activetab === 2">
         <Item background='./assets/img/work-four.jpg' alt='project-img' link='https://github.com/ChrisDemey/Hitman2-website' />
-        <kinesis-element :strength="20" type="depth">
-          <Badge id="bootstrap" badgename='Bootstrap' />
-        </kinesis-element>
-      </kinesis-container>
-      <kinesis-container class="work" v-show="activetab === 1 || activetab === 6">
+        <Badge id="bootstrap" badgename='Bootstrap' />
+      </div>
+      <div class="work" v-show="activetab === 1 || activetab === 6">
         <Item background='./assets/img/work-six.jpg' alt='project-img' link='https://github.com/ChrisDemey/My-Portfolio-V2' />
-        <kinesis-element :strength="20" type="depth">
-          <Badge id="react" badgename='React' />
-        </kinesis-element>
-      </kinesis-container>
-      <kinesis-container class="work" v-show="activetab === 1 || activetab === 3">
+        <Badge id="react" badgename='React' />
+      </div>
+      <div class="work" v-show="activetab === 1 || activetab === 3">
         <Item background='./assets/img/work-seven.jpg' alt='project-img' link='https://github.com/ChrisDemey/Portfolio-v3' />
-        <kinesis-element :strength="20" type="depth">
-          <Badge id="vue" badgename='Vue' />
-        </kinesis-element>
-      </kinesis-container>
+        <Badge id="vue" badgename='Vue' />
+      </div>
     </div>
   </div>
 </template>
@@ -85,6 +71,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     .tabs {
+      background-color: rgb(32, 32, 32);
       position: fixed;
       top: 90px;
       z-index: 6;
@@ -95,13 +82,11 @@ export default {
       width: 90%;
       max-width: 1080px;
       .up-line {
-        background: transparent;
         display: flex;
         justify-content: center;
         font-size: 20px;
       }
       .down-line {
-        background: transparent;
         display: flex;
         justify-content: space-around;
       }
@@ -109,7 +94,7 @@ export default {
         cursor: pointer;
         padding: 10px;
         background: transparent;
-        color: rgb(78, 78, 78);
+        color: rgb(129, 129, 129);
         &:hover{
           color: rgb(129, 129, 129);
           font-weight: bold;
@@ -148,9 +133,9 @@ export default {
         }
       }
       .active-alpine {
-        color: rgb(66, 108, 114);
+        color: rgb(99, 155, 163);
         &:hover {
-          color: rgb(66, 108, 114);
+          color: rgb(99, 155, 163);
         }
       }
       .active-react {
