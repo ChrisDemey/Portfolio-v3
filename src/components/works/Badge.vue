@@ -25,13 +25,17 @@ export default {
     width: 120px;
     text-align: center;
     transition: 0.2s;
-    background: transparent;
-    // border: 3px solid white;
     font-weight: 900;
     @media screen and (max-width: 500px) {
       width: 80px;
       padding: 3px 7px;
     }
+    // @media (max-height: 740px) and (orientation: landscape) {
+    //   width: 80px;
+    //   padding: 3px;
+    //   font-size: 12px;
+    //   margin-bottom: 5px;
+    // }
   }
   #bootstrap {
     background-color: rgb(171, 89, 192);

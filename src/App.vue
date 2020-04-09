@@ -26,35 +26,39 @@
       </router-link>
     </div>
     <router-view />
+    <img class="animatedBG" src="/assets/gifs/synthwave_geek.gif" alt="image_background">
   </div>
 </template>
 
 <style lang="scss">
   * {
-    // cursor: none;
     font-family: 'Spartan', sans-serif;
     color: white;
   }
   body {
     margin: 0px;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(0, 0, 0);
   }
-  // #pointer-ring {
-  //   left: 0px;
-  //   top: 0px;
-  //   width: 0px;
-  //   height: 0px;
-  //   padding: 15px;
-  //   border: 2px solid rgba(255, 255, 255, 0);
-  //   box-shadow: 0px 0px 3px rgb(255, 255, 255), 0px 0px 15px rgba(255, 255, 255, 0.61), inset 0px 0px 10px black;
-  //   background: transparent;
-  //   position: absolute;
-  //   border-radius: 50%;
-  //   z-index: 10;
-  //   pointer-events: none;
-  // }
+  .animatedBG {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width:100%;
+    height: auto;
+    opacity: 0.4;
+    @media (min-aspect-ratio: 16/9) {
+      width:100%;
+      height: auto;
+    }
+    @media (max-aspect-ratio: 16/9) {
+      width:auto;
+      height: 100%;
+    }
+  }
   #nav {
-    background-color: rgb(32, 32, 32);
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0%);
