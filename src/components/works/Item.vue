@@ -37,5 +37,9 @@ export default {
             width: 250px;
             height: 200px;
         }
+        // @media (max-height: 740px) and (orientation: landscape) {
+        //     width: 150px;
+        //     height: 100px;
+        // }
     }
 </style>

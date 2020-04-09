@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="content">
-      <div v-show="activetab === 1 || activetab === 4 || activetab === 5">
+      <div class="work" v-show="activetab === 1 || activetab === 4 || activetab === 5">
         <Item background='./assets/img/work-five.jpg' alt='project-img' link='https://github.com/ChrisDemey/TD2-Tailwind-Alpine' />
         <Badge id="tailwind" badgename='Tailwind' />
         <Badge id="alpine" badgename='Alpine' />
@@ -64,23 +64,32 @@ export default {
 
 <style lang="scss">
   .myworks {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     max-width: 1080px;
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
+    @media screen and (max-width: 360px) and (max-height: 740px) {
+      transform: translate(-50%, 0%);
+      top: 100px;
+    }
+    // @media (max-width: 360px) and (orientation: landscape) {
+    //   transform: translate(-50%, 0%);
+    //   top: 80px;
+    // }
     .tabs {
-      background-color: rgb(32, 32, 32);
-      position: fixed;
-      top: 90px;
-      z-index: 6;
       display: flex;
       flex-direction: column;
       text-align: center;
       margin: auto;
-      width: 90%;
-      max-width: 1080px;
+      width: 100%;
       .up-line {
         display: flex;
         justify-content: center;
@@ -88,7 +97,7 @@ export default {
       }
       .down-line {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
       }
       a {
         cursor: pointer;
@@ -100,7 +109,7 @@ export default {
           font-weight: bold;
         }
         @media screen and (max-width: 768px) {
-          font-size: 13px;
+          font-size: 12px;
         }
       }
       .active {
@@ -147,14 +156,15 @@ export default {
     }
     .content {
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-top: 210px;
-      @media screen and (max-width: 555px) {
-        margin-top: 185px;
-      }
-      @media screen and (max-width: 399px) {
-        justify-content: center;
+      overflow: auto;
+      padding-top: 30px;
+      width: 90%;
+      margin: auto;
+      // @media (max-height: 740px) and (orientation: landscape) {
+      //   padding-top: 20px;
+      // }
+      .work {
+        margin-right: 40px;
       }
     }
   }
