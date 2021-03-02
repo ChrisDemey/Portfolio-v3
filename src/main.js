@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import { VTooltip, VPopover, VClosePopover } from 'v-tooltip'
+import '@/assets/css/tailwind.css'
 
 Vue.config.productionTip = false
 Vue.directive('tooltip', VTooltip)
