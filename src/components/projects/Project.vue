@@ -1,12 +1,12 @@
 <template>
-  <ul class="grid grid-cols-2 -mt-24 space-y-0 gap-x-6 gap-y-12 lg:grid-cols-3 lg:gap-x-8">
-    <li v-for="item in projects" :key="item.id">
-      <div class="rounded-lg shadow-lg">
+  <div class="grid grid-cols-2 gap-4 space-y-0 md:grid-cols-3 md:gap-x-6 md:gap-y-12">
+    <ul v-for="item in projects" :key="item.id">
+      <li class="rounded-lg shadow-lg">
         <a class="cursor-pointer aspect-w-3 aspect-h-2" :href="item.link" target="_blank">
           <img class="object-cover rounded-t-lg shadow" :src="item.image">
         </a>
-        <div class="px-4 pt-2 pb-4 space-y-2 bg-white rounded-b-lg">
-          <div class="space-y-1 text-lg font-medium leading-6">
+        <div class="px-2 pt-2 pb-2 space-y-2 bg-white rounded-b-lg md:px-4 md:pb-4">
+          <div class="space-y-1 text-base font-medium leading-6 md:text-lg">
             <h3>{{ item.name }}</h3>
           </div>
           <div class="space-x-2 text-right">
@@ -23,9 +23,9 @@
             />
           </div>
         </div>
-      </div>
-    </li>
-  </ul>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>

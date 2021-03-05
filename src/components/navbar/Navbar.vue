@@ -1,7 +1,7 @@
 <template>
-    <div class="flex items-center justify-between max-w-4xl">
+    <div class="flex items-center justify-around max-w-4xl md:justify-between">
         <router-link to="/">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-white" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-14 md:h-20" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <polyline points="5 12 3 12 12 3 21 12 19 12" />
                 <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
@@ -9,7 +9,7 @@
             </svg>
         </router-link>
         <router-link to="/about">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-white" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-14 md:h-20" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <rect x="3" y="4" width="18" height="16" rx="3" />
                 <circle cx="9" cy="10" r="2" />
@@ -19,7 +19,7 @@
             </svg>
         </router-link>
         <router-link to="/projects">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-white" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-14 md:h-20" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <polyline points="7 8 3 12 7 16" />
                 <polyline points="17 8 21 12 17 16" />
@@ -27,7 +27,7 @@
             </svg>
         </router-link>
         <router-link to="/contact">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-white" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-14 md:h-20" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />
                 <line x1="12" y1="11" x2="12" y2="11.01" />

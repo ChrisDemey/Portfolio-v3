@@ -1,8 +1,8 @@
 <template>
-  <div class="grid grid-cols-4 gap-4">
+  <div class="grid-cols-4 gap-4 space-y-2 md:space-y-0 md:grid">
     <ul
       v-for="item in paragraphs"
-      :key="item"
+      :key="item.id"
       :class="item.class"
     >
       <li class="px-4 py-2 font-medium text-justify text-black bg-white rounded-lg">

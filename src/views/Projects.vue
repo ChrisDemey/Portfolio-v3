@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center justify-center h-full overflow-y-auto">
+  <div class="h-full px-2 pb-20 mt-4 overflow-y-auto md:mt-8 md:px-0">
     <Project />
   </div>
 </template>

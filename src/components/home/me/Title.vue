@@ -2,7 +2,7 @@
   <div class="space-y-6 text-center">
     <ul
       v-for="item in titles"
-      :key="item"
+      :key="item.id"
     >
       <li class="inline-block px-8 py-2 text-black bg-white rounded-lg" :class="item.class">
         <span>
@@ -17,7 +17,7 @@
 import store from '@/store/store.js'
 
 export default {
-  name: 'Job',
+  name: 'Title',
 
   data () {
     return {

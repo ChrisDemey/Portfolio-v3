@@ -1,6 +1,6 @@
 <template>
   <div
-    class="text-white inline-block px-3 py-px rounded-full"
+    class="inline-block px-3 py-px text-sm text-white rounded-full md:text-base"
   >
     {{ badgename }}
   </div>

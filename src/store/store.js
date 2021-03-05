@@ -4,11 +4,11 @@ export default Vue.observable({
   titles: [
     {
       text: 'Christophe Demey',
-      class: 'text-7xl uppercase'
+      class: 'text-2xl font-bold md:font-normal md:text-7xl uppercase'
     },
     {
       text: 'Développeur Web Front-End',
-      class: 'font-bold text-lg'
+      class: 'font-bold md:text-lg'
     }
   ],
 

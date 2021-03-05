@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full px-2 mt-8 space-y-6 overflow-y-auto text-white md:px-0">
+  <div class="h-full px-2 pb-20 mt-4 overflow-y-auto text-white md:mt-8 md:px-0">
     <Paragraph />
   </div>
 </template>
