@@ -14,21 +14,14 @@
 </template>
 
 <script>
+import store from '@/store/store.js'
+
 export default {
   name: 'Job',
 
   data () {
     return {
-      titles: [
-        {
-          text: 'Christophe Demey',
-          class: 'text-7xl uppercase'
-        },
-        {
-          text: 'Développeur Web Front-End',
-          class: 'font-bold text-lg'
-        }
-      ]
+      titles: store.titles
     }
   }
 }

@@ -29,49 +29,14 @@
 </template>
 
 <script>
+import store from '@/store/store.js'
+
 export default {
   name: 'Project',
 
   data () {
     return {
-      projects: [
-        {
-          name: 'Portfolio',
-          link: 'https://github.com/ChrisDemey/Portfolio-v3',
-          image: '../../assets/img/portfolio.jpg',
-          techs: ['Vue', 'Tailwind']
-        },
-        {
-          name: 'The Division 2',
-          link: 'https://github.com/ChrisDemey/TD2-Tailwind-Alpine',
-          image: '../../assets/img/division.jpg',
-          techs: ['Alpine', 'Tailwind']
-        },
-        {
-          name: 'Le Sanglier Faisandé',
-          link: 'https://github.com/ChrisDemey/restaurant-css-framework',
-          image: '../../assets/img/sanglier.jpg',
-          techs: ['Bootstrap']
-        },
-        {
-          name: 'Allez Ciné',
-          link: 'https://github.com/ChrisDemey/allezcinev3',
-          image: '../../assets/img/allezcine.jpg',
-          techs: ['Bootstrap']
-        },
-        {
-          name: 'Qu-AI 10',
-          link: 'https://github.com/ChrisDemey/ProjetClientQuai10',
-          image: '../../assets/img/quai.jpg',
-          techs: ['Bootstrap']
-        },
-        {
-          name: 'Hitman',
-          link: 'https://github.com/ChrisDemey/Hitman2-website',
-          image: '../../assets/img/hitman.jpg',
-          techs: ['Bootstrap']
-        }
-      ]
+      projects: store.projects
     }
   }
 }
