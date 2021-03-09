@@ -15,9 +15,9 @@
                 :badgename="tech"
                 :class="{
                   'bg-gray-500': tech == 'Alpine',
-                  'bg-gradient-to-r from-blue-400 to-green-300 text-gray-800': tech == 'Tailwind',
+                  'bg-tailwind-icon text-gray-900': tech == 'Tailwind',
                   'bg-purple-500': tech == 'Bootstrap',
-                  'bg-green-500 text-green-900': tech == 'Vue'
+                  'bg-vue-icon text-gray-900': tech == 'Vue'
                 }"
               />
             </div>

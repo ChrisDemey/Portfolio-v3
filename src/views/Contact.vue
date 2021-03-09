@@ -3,14 +3,14 @@
         <div class="flex space-x-6 md:space-x-32">
             <Motion
                 :hover="[
-                    'rotate-0',
-                    '-rotate-12',
+                    'rotate-0 rounded-lg',
+                    '-rotate-12 rounded-2xl bg-yellow-100',
                     'rotate-12',
                     '-rotate-12',
                     'rotate-0'
                 ]"
                 :options="{ instantRollback: true }"
-                class="bg-white rounded-lg"
+                class="bg-white"
             >
                 <a href="https://github.com/ChrisDemey" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-20 md:h-24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -21,8 +21,8 @@
             </Motion>
             <Motion
                 :hover="[
-                    'rotate-0',
-                    '-rotate-12',
+                    'rotate-0 rounded-lg',
+                    '-rotate-12 rounded-2xl bg-blue-900 text-white',
                     'rotate-12',
                     '-rotate-12',
                     'rotate-0'
@@ -43,8 +43,8 @@
             </Motion>
             <Motion
                 :hover="[
-                    'rotate-0',
-                    '-rotate-12',
+                    'rotate-0 rounded-lg',
+                    '-rotate-12 rounded-2xl bg-red-500 text-white',
                     'rotate-12',
                     '-rotate-12',
                     'rotate-0'
