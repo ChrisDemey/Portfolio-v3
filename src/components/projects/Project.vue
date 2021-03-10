@@ -1,6 +1,6 @@
 <template>
   <div class="grid grid-cols-2 gap-4 space-y-0 md:grid-cols-3 md:gap-x-6 md:gap-y-12">
-    <ul v-for="item in projects" :key="item.id">
+    <ul v-for="item in $state.projects" :key="item.id">
       <a :href="item.link" target="_blank">
         <li class="p-1 duration-200 ease-in-out transform bg-white shadow-lg cursor-pointer hover:scale-90 rounded-xl">
           <img class="object-cover border-none rounded-t-lg" :src="item.image">
@@ -29,15 +29,7 @@
 </template>
 
 <script>
-import store from '@/store/store.js'
-
 export default {
-  name: 'Project',
-
-  data () {
-    return {
-      projects: store.projects
-    }
-  }
+  name: 'Project'
 }
 </script>

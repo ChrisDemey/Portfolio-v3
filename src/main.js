@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import Multiselect from 'vue-multiselect'
+import './store/vue-stator'
 import '@/assets/css/tailwind.css'
 
 Vue.component('multiselect', Multiselect)

@@ -1,10 +1,13 @@
 <template>
   <div class="space-y-6 text-center">
     <ul
-      v-for="item in titles"
+      v-for="item in $state.titles"
       :key="item.id"
     >
-      <li class="inline-block px-8 py-2 text-black bg-white rounded-lg" :class="item.class">
+      <li
+        class="inline-block px-8 py-2 text-black bg-white rounded-lg"
+        :class="item.class"
+      >
         <span>
           {{ item.text }}
         </span>
@@ -14,15 +17,7 @@
 </template>
 
 <script>
-import store from '@/store/store.js'
-
 export default {
-  name: 'Title',
-
-  data () {
-    return {
-      titles: store.titles
-    }
-  }
+  name: 'Title'
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="grid-cols-4 gap-4 space-y-2 md:space-y-0 md:grid">
     <ul
-      v-for="item in paragraphs"
+      v-for="item in $state.paragraphs"
       :key="item.id"
       :class="item.class"
     >
@@ -15,15 +15,7 @@
 </template>
 
 <script>
-import store from '@/store/store.js'
-
 export default {
-  name: 'Paragraph',
-
-  data () {
-    return {
-      paragraphs: store.paragraphs
-    }
-  }
+  name: 'Paragraph'
 }
 </script>
