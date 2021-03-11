@@ -3,6 +3,9 @@ import { plugin as VueStator } from 'vue-stator'
 
 Vue.use(VueStator, {
   state: () => ({
+    contactIconsClass: 'bg-white rounded-lg',
+    contactSvgClass: 'h-20 md:h-24',
+    navbarSvgClass: 'text-white h-14 md:h-20',
     titles: [
       {
         text: 'Christophe Demey',
@@ -13,6 +16,7 @@ Vue.use(VueStator, {
         class: 'font-bold md:text-lg'
       }
     ],
+
     paragraphs: [
       {
         text: 'Je m\'appelle Christophe, j\'ai 30 ans, et je suis actuellement développeur web front-end à Alstom, Charleroi.',
@@ -35,6 +39,7 @@ Vue.use(VueStator, {
         class: ''
       }
     ],
+
     projects: [
       {
         name: 'Portfolio',
