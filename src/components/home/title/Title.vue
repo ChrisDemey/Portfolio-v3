@@ -1,7 +1,7 @@
 <template>
   <div class="space-y-6 text-center">
     <ul
-      v-for="item in $state.titles"
+      v-for="item in titles"
       :key="item.id"
     >
       <li
@@ -18,6 +18,21 @@
 
 <script>
 export default {
-  name: 'Title'
+  name: 'Title',
+
+  data () {
+    return {
+      titles: [
+        {
+          text: 'Christophe Demey',
+          class: 'text-2xl font-bold md:font-normal md:text-7xl uppercase'
+        },
+        {
+          text: 'Développeur Web Front-End',
+          class: 'font-bold md:text-lg'
+        }
+      ]
+    }
+  }
 }
 </script>

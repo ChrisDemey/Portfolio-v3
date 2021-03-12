@@ -10,7 +10,7 @@
                     'rotate-0'
                 ]"
                 :options="{ instantRollback: true }"
-                :class="$state.contactIconsClass"
+                class="bg-white rounded-lg"
             >
                 <Github />
             </Motion>
@@ -23,7 +23,7 @@
                     'rotate-0'
                 ]"
                 :options="{ instantRollback: true }"
-                :class="$state.contactIconsClass"
+                class="bg-white rounded-lg"
             >
                 <LinkedIn />
             </Motion>
@@ -36,7 +36,7 @@
                     'rotate-0'
                 ]"
                 :options="{ instantRollback: true }"
-                :class="$state.contactIconsClass"
+                class="bg-white rounded-lg"
             >
                 <Gmail />
             </Motion>

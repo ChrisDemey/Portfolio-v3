@@ -1,6 +1,6 @@
 <template>
   <div class="grid grid-cols-2 gap-4 space-y-0 md:grid-cols-3 md:gap-x-6 md:gap-y-12">
-    <ul v-for="item in $state.projects" :key="item.id">
+    <ul v-for="item in projects" :key="item.id">
       <a :href="item.link" target="_blank">
         <li class="p-1 duration-200 ease-in-out transform bg-white shadow-lg cursor-pointer hover:scale-90 rounded-xl">
           <img class="object-cover border-none rounded-t-lg" :src="item.image">
@@ -30,6 +30,49 @@
 
 <script>
 export default {
-  name: 'Project'
+  name: 'Project',
+
+  data () {
+    return {
+      projects: [
+        {
+          name: 'Portfolio',
+          link: 'https://github.com/ChrisDemey/Portfolio-v3',
+          image: '../../assets/img/portfolio.jpg',
+          techs: ['Vue', 'Tailwind']
+        },
+        {
+          name: 'The Division 2',
+          link: 'https://github.com/ChrisDemey/TD2-Tailwind-Alpine',
+          image: '../../assets/img/division.jpg',
+          techs: ['Alpine', 'Tailwind']
+        },
+        {
+          name: 'Le Sanglier Faisandé',
+          link: 'https://github.com/ChrisDemey/restaurant-css-framework',
+          image: '../../assets/img/sanglier.jpg',
+          techs: ['Bootstrap']
+        },
+        {
+          name: 'Allez Ciné',
+          link: 'https://github.com/ChrisDemey/allezcinev3',
+          image: '../../assets/img/allezcine.jpg',
+          techs: ['Bootstrap']
+        },
+        {
+          name: 'Qu-AI 10',
+          link: 'https://github.com/ChrisDemey/ProjetClientQuai10',
+          image: '../../assets/img/quai.jpg',
+          techs: ['Bootstrap']
+        },
+        {
+          name: 'Hitman',
+          link: 'https://github.com/ChrisDemey/Hitman2-website',
+          image: '../../assets/img/hitman.jpg',
+          techs: ['Bootstrap']
+        }
+      ]
+    }
+  }
 }
 </script>
