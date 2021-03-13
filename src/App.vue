@@ -7,14 +7,14 @@
     <Container>
       <Navbar />
       <transition
-        enter-active-class="duration-150 transform"
+        mode="out-in"
+        enter-active-class="duration-200 transform"
         enter-class="scale-0"
         enter-to-class="scale-100"
-        leave-active-class="duration-150 transform"
+        leave-active-class="duration-200 transform"
         leave-class="scale-100"
         leave-to-class="scale-0"
       >
-      <!-- <transition name="scale" mode="out-in"> -->
         <router-view />
       </transition>
     </Container>
