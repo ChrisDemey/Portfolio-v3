@@ -4,8 +4,8 @@
     class="bg-center bg-no-repeat bg-cover"
     style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/gifs/synthwave_geek.gif');"
   >
-    <Container>
-      <Navbar />
+    <div class="h-screen max-w-4xl pt-2 mx-auto overflow-hidden">
+      <Navigation />
       <transition
         mode="out-in"
         enter-active-class="duration-200 transform"
@@ -17,6 +17,16 @@
       >
         <router-view />
       </transition>
-    </Container>
+    </div>
   </div>
 </template>
+
+<script>
+import Navigation from './components/navigation'
+
+export default {
+  components: {
+    Navigation
+  }
+}
+</script>

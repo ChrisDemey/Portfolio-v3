@@ -16,8 +16,6 @@
 
 <script>
 export default {
-  name: 'Paragraph',
-
   data () {
     return {
       paragraphs: [

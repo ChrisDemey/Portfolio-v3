@@ -8,7 +8,6 @@
 
 <script>
 export default {
-  name: 'Badge',
   props: {
     badgename: String
   }

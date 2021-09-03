@@ -18,8 +18,6 @@
 
 <script>
 export default {
-  name: 'Title',
-
   data () {
     return {
       titles: [

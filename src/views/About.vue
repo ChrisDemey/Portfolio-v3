@@ -3,3 +3,13 @@
     <Paragraph />
   </div>
 </template>
+
+<script>
+import Paragraph from '../components/paragraph'
+
+export default {
+  components: {
+    Paragraph
+  }
+}
+</script>

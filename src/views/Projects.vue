@@ -3,3 +3,13 @@
     <Project />
   </div>
 </template>
+
+<script>
+import Project from '../components/project'
+
+export default {
+  components: {
+    Project
+  }
+}
+</script>
