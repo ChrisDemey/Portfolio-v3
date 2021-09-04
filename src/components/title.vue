@@ -26,7 +26,7 @@ export default {
           class: 'text-2xl font-bold md:font-normal md:text-7xl uppercase'
         },
         {
-          text: 'Développeur Web Front-End',
+          text: 'Développeur Web Full Stack',
           class: 'font-bold md:text-lg'
         }
       ]

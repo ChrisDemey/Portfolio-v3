@@ -11,7 +11,7 @@
 
 <script>
 import Title from '../components/title'
-import { Vue, Tailwind } from '@/components/icons'
+import { Laravel, Vue, Tailwind } from '@/components/icons'
 
 export default {
   components: {
@@ -20,6 +20,7 @@ export default {
   data () {
     return {
       frameworks: [
+        { icon: Laravel },
         { icon: Vue },
         { icon: Tailwind }
       ]

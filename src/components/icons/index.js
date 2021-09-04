@@ -7,5 +7,6 @@ export { default as Github } from './contact/github.vue'
 export { default as Gmail } from './contact/gmail.vue'
 export { default as LinkedIn } from './contact/linkedIn.vue'
 
+export { default as Laravel } from './home/laravel.vue'
 export { default as Vue } from './home/vue.vue'
 export { default as Tailwind } from './home/tailwind.vue'

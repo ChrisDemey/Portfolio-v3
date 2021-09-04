@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors: {
         'vue-icon': '#42b883',
-        'tailwind-icon': '#07b6d5'
+        'tailwind-icon': '#07b6d5',
+        'laravel-icon': '#FF2D20'
       }
     }
   },
