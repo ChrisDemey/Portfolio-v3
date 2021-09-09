@@ -2,7 +2,7 @@
   <div
     id="app"
     class="bg-center bg-no-repeat bg-cover"
-    style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/gifs/synthwave_geek.gif');"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/gifs/synthwave_geek.gif');"
   >
     <div class="h-screen max-w-4xl pt-2 mx-auto overflow-hidden">
       <Navigation />
