@@ -1,10 +1,10 @@
 <template>
   <div class="grid grid-cols-2 gap-4 space-y-0 md:grid-cols-3 md:gap-x-6 md:gap-y-12">
-    <div v-for="(item, index) in projects" :key="index" class="p-1 duration-200 ease-in-out transform bg-white shadow-lg cursor-pointer hover:scale-90 rounded-xl">
+    <div v-for="(item, index) in projects" :key="index" class="p-2 duration-200 ease-in-out transform bg-white bg-opacity-25 backdrop-blur-md backdrop-filter shadow-lg cursor-pointer hover:scale-90 rounded-xl">
       <a :href="item.link" target="_blank">
         <img class="object-cover h-48 rounded-t-lg" :src="item.image" alt="image">
         <div class="px-2 pt-2 space-y-2 rounded-b-lg md:px-4 md:pb-2">
-          <h3 class="text-base font-medium leading-6 md:text-lg">
+          <h3 class="text-base text-white font-medium leading-6 md:text-lg">
             {{ item.name }}
           </h3>
           <div class="space-x-2 text-right">
@@ -17,7 +17,8 @@
                 'bg-tailwind-icon': tech === 'Tailwind',
                 'bg-purple-500': tech === 'Bootstrap',
                 'bg-vue-icon': tech === 'Vue',
-                'bg-green-300 text-gray-800': tech === 'Nuxt 2'
+                'bg-green-300 text-gray-800': tech === 'Nuxt 2',
+                'bg-laravel-icon': tech === 'Laravel'
               }"
             />
           </div>
@@ -48,6 +49,12 @@ export default {
           link: 'https://github.com/ChrisDemey/my-bat-comics',
           image: '../../assets/img/batcomics.png',
           techs: ['Nuxt 2', 'Tailwind']
+        },
+        {
+          name: 'My Readings',
+          link: 'https://github.com/ChrisDemey/my-readings',
+          image: '../../assets/img/myreadings.png',
+          techs: ['Laravel', 'Vue', 'Tailwind']
         },
         {
           name: 'The Division 2',
