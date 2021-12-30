@@ -1,6 +1,11 @@
 <template>
   <div class="flex items-center justify-around max-w-4xl md:justify-between">
-    <router-link v-for="(link, index) in navigations" :key="index" :to="link.route">
+    <router-link
+      v-for="(link, index) in navigations"
+      :key="index"
+      :to="link.route"
+      class="text-white py-1 px-2 bg-white bg-opacity-25 backdrop-blur-md backdrop-filter rounded-lg"
+    >
       <Motion :click="[ 'scale-100', 'scale-50' ]">
         <component :is="link.icon" v-if="link.icon" />
       </Motion>

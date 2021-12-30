@@ -1,10 +1,10 @@
 <template>
   <div
     id="app"
-    class="bg-center bg-no-repeat bg-cover"
+    class="bg-center bg-no-repeat bg-cover h-screen"
     style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/gifs/synthwave_geek.gif');"
   >
-    <div class="h-screen max-w-4xl pt-2 mx-auto overflow-hidden">
+    <div class="max-w-4xl pt-2 mx-auto h-screen flex flex-col overflow-hidden">
       <Navigation />
       <transition
         mode="out-in"
