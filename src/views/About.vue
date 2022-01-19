@@ -6,9 +6,9 @@
       :class="item.class"
     >
       <li class="px-4 py-2 font-medium text-justify bg-white bg-opacity-25 backdrop-blur-md backdrop-filter text-white rounded-lg">
-      <span>
-        {{ item.text }}
-      </span>
+        <span>
+          {{ item.text }}
+        </span>
       </li>
     </ul>
   </div>
@@ -20,7 +20,7 @@ export default {
     return {
       paragraphs: [
         {
-          text: 'Je m\'appelle Christophe, j\'ai 31 ans, et je suis actuellement développeur web front-end à Alstom, Charleroi.',
+          text: 'Je m\'appelle Christophe, j\'ai ' + this.myAge(new Date(1990, 0, 30)) + ' ans, et je suis actuellement développeur web fullstack à Alstom, Charleroi.',
           class: 'text-lg font-bold col-span-4'
         },
         {
@@ -40,6 +40,13 @@ export default {
           class: ''
         }
       ]
+    }
+  },
+  methods: {
+    myAge (dob) {
+      const diff = Date.now() - dob.getTime()
+      const age = new Date(diff)
+      return Math.abs(age.getUTCFullYear() - 1990 + 20)
     }
   }
 }
